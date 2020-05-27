@@ -1,0 +1,29 @@
+﻿<Window x:Class="ProefEx.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProefEx.WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded" Closing="Window_Closing">
+    <Grid>
+        <GroupBox x:Name="grpRassen" Header="Rassen" HorizontalAlignment="Left" Height="387" Margin="24,22,0,0" VerticalAlignment="Top" Width="313">
+            <Grid>
+                <Button x:Name="btnNew" Content="Nieuw" HorizontalAlignment="Left" Height="37" Margin="10,10,0,0" VerticalAlignment="Top" Width="77" Click="btnNew_Click"/>
+                <Button x:Name="btnEdit" Content="Wijzig" HorizontalAlignment="Left" Height="37" Margin="92,10,0,0" VerticalAlignment="Top" Width="77" Click="btnEdit_Click"/>
+                <Button x:Name="btnDelete" Content="Verwijder" HorizontalAlignment="Left" Height="37" Margin="174,10,0,0" VerticalAlignment="Top" Width="77" Click="btnDelete_Click"/>
+                <ListBox x:Name="lstRassen" HorizontalAlignment="Left" Height="290" Margin="10,64,0,0" VerticalAlignment="Top" Width="281" SelectionChanged="lstRassen_SelectionChanged"/>
+
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="grpBewerken" Header="Bewerken" HorizontalAlignment="Left" Height="341" Margin="355,22,0,0" VerticalAlignment="Top" Width="427">
+            <Grid>
+                <Label Content="Ras : " HorizontalAlignment="Left" Height="28" Margin="10,66,0,0" VerticalAlignment="Top" Width="66"/>
+                <TextBox x:Name="txtRas" HorizontalAlignment="Left" Height="30" Margin="94,64,0,0" TextWrapping="Wrap" Text="-" VerticalAlignment="Top" Width="311"/>
+                <Button x:Name="btnSave" Content="Bewaren" HorizontalAlignment="Left" Height="37" Margin="10,10,0,0" VerticalAlignment="Top" Width="77" Click="btnSave_Click"/>
+                <Button x:Name="btnCancel" Content="Annuleren" HorizontalAlignment="Left" Height="37" Margin="94,10,0,0" VerticalAlignment="Top" Width="77" Click="btnCancel_Click"/>
+            </Grid>
+        </GroupBox>
+
+    </Grid>
+</Window>
